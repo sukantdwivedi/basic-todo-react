@@ -1,6 +1,7 @@
 # React + Tailwind (with Vite) 
-# Day - 3 
-# Basic Todo App using React hooks and all basic functionalities.
+- Day - 3 
+- Basic Todo App using React hooks and all basic functionalities.
+- Demo : https://65282dbe1c8ef94e8e2bb0d7--stupendous-tulumba-969de1.netlify.app/
 
 # React + Vite
 
