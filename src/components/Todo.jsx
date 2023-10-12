@@ -1,5 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import todo from '../images/todo.png'
+
+const getLocalData = () => {
+    let list = localStorage.getItem('lists')
+
+    if (list) {
+        return JSON.parse(localStorage.getItem('lists'));
+    } else {
+        return []
+    }
+}
 
 const Todo = () => {
 
@@ -25,6 +35,12 @@ const Todo = () => {
     const removeAll = () => {
         setItems([])
     }
+
+    useEffect(() => {
+        localStorage.setItem('lists', JSON.stringify(items))
+    }, [items])
+
+    
   return (
     <>
         <div className='flex flex-col gap-2 h-screen items-center mt-20 '>
